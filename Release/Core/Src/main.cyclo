@@ -1,0 +1,11 @@
+../Core/Src/main.cpp:52:6:void LED_Init(uint32_t, GPIO_TypeDef*)	3
+../Core/Src/main.cpp:69:6:void LED_On(uint32_t, GPIO_TypeDef*)	1
+../Core/Src/main.cpp:74:6:void LED_Off(uint32_t, GPIO_TypeDef*)	1
+../Core/Src/main.cpp:151:6:bool read_command_from_uart(char*, size_t)	15
+../Core/Src/main.cpp:251:6:void led0_timer_init(uint32_t)	1
+../Core/Src/main.cpp:268:17:void TIM2_IRQHandler()	2
+../Core/Src/main.cpp:279:6:void led1_timer_init(uint32_t)	1
+../Core/Src/main.cpp:80:6:void set_led_on(int, int)	3
+../Core/Src/main.cpp:98:6:void process_command(char*, size_t)	17
+../Core/Src/main.cpp:223:5:int main()	2
+../Core/Src/main.cpp:296:17:void TIM6_DAC_IRQHandler()	2

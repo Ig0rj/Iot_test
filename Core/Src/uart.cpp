@@ -50,7 +50,7 @@ inline void Uart::read(char *data, size_t lenght)
 
 	 while(count<lenght)
 	 {
-		 while(!(USART2->ISR & USART_ISR_RXNE))
+		 while(!(USART2->ISR & USART_ISR_RXNE));
 			 data[count++]=static_cast<char>(USART2->RDR & 0xFF);
 	 }
  }

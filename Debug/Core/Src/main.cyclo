@@ -1,0 +1,12 @@
+../Drivers/CMSIS/Include/core_cm4.h:1679:22:void __NVIC_EnableIRQ(IRQn_Type)	2
+../Core/Src/main.cpp:23:6:void LED_Init(uint32_t, GPIO_TypeDef*)	3
+../Core/Src/main.cpp:38:6:void LED_On(uint32_t, GPIO_TypeDef*)	1
+../Core/Src/main.cpp:43:6:void LED_Off(uint32_t, GPIO_TypeDef*)	1
+../Core/Src/main.cpp:48:6:void set_led_on(int, int)	3
+../Core/Src/main.cpp:66:6:void process_command(char*, size_t)	19
+../Core/Src/main.cpp:116:6:bool read_command_from_uart(char*, size_t)	17
+../Core/Src/main.cpp:187:5:int main()	2
+../Core/Src/main.cpp:215:6:void led0_timer_init(uint32_t)	1
+../Core/Src/main.cpp:236:17:void TIM2_IRQHandler()	2
+../Core/Src/main.cpp:247:6:void led1_timer_init(uint32_t)	1
+../Core/Src/main.cpp:267:17:void TIM6_DAC_IRQHandler()	2

@@ -138,10 +138,8 @@ bool read_command_from_uart(char* buffer, size_t buffer_size)
 	    			Uart::ACK_ERROR();
 	    			return false;
 	    		}
-
-	    		if(!data_count)
-	    			data_count=1;
-
+ 		
+	    		data_count+=1;
 	    		end_ch='\r';
 	    		raw_data=true;
 	         }

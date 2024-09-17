@@ -136,6 +136,7 @@ bool read_command_from_uart(char* buffer, size_t buffer_size)
 	    		if((data_count> MAX_DATA_LEN) || (data_count< MIN_DATA_LEN))
 	    		{
 	    			Uart::ACK_ERROR();
+				memset(buffer,0,buffer_size);
 	    			return false;
 	    		}
  		
@@ -154,6 +155,7 @@ bool read_command_from_uart(char* buffer, size_t buffer_size)
 	            	}
 	            	else
 	            	{
+				memset(buffer,0,buffer_size);
 	            		return false;
 	            	}
 	            }
@@ -161,6 +163,7 @@ bool read_command_from_uart(char* buffer, size_t buffer_size)
 	            if(data_count<0)
 	            {
 	            	Uart::ACK_ERROR(); //if echo <data> > <len>:
+			memset(buffer,0,buffer_size);    
 	            	return false;
 	            }
 
@@ -170,7 +173,11 @@ bool read_command_from_uart(char* buffer, size_t buffer_size)
 	    if(pos < buffer_size - 1)
 	    	buffer[pos++] = received_char;
 	     else
+	    {
+		memset(buffer,0,buffer_size);    
 	        return false;
+
+	    }
 
 	     if(pos==5)
 	     {
